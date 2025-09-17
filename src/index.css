@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Apple-style minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  transition: background 0.3s ease, opacity 0.3s ease;
+  opacity: 0; /* hidden until scroll */
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  opacity: 1; /* appears only when interacting */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
