@@ -1,7 +1,7 @@
 // src/components/CompanyIntro.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import companyPhoto from "../assets/company.jpeg"; // updated to .jpeg
+import companyPhoto from "../../assets/company.jpeg"; // <<-- fixed path
 
 export default function CompanyIntro() {
   return (

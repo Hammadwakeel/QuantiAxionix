@@ -1,6 +1,6 @@
 // src/components/HomeHero.jsx
 import React from "react";
-import homeVideo from "../assets/home.mp4"; // adjust path if needed
+import homeVideo from "../../assets/home.mp4"; // adjust path if needed
 
 export default function HomeHero() {
   return (
